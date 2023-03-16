@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Taco Cloud</title>
+    <style>
+        h1 {
+            background: #D9FFAD;
+            color: green;
+            padding: 2px;
+        }
+
+        .leg {
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body th:bgcolor="cornsilk">
+<form method="POST" th:action="@{/design}">
+    <h1 th:align="center">Welcome to...</h1>
+    <p class="leg">
+        <img th:src="@{/images/Sweety.jpeg}" width="400" height="450"/>
+    </p>
+    <a href="/design" class="btn">here you can order tacos from me</a>
+    <h1 th:align="center">my home 🏠</h1>
+</form>
+</body>
+</html>
