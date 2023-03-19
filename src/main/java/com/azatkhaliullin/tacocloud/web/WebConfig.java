@@ -1,7 +1,7 @@
 package com.azatkhaliullin.tacocloud.web;
 
-import com.azatkhaliullin.tacocloud.Ingredient;
-import com.azatkhaliullin.tacocloud.Ingredient.Type;
+import com.azatkhaliullin.tacocloud.dto.Ingredient;
+import com.azatkhaliullin.tacocloud.dto.Ingredient.Type;
 import com.azatkhaliullin.tacocloud.data.IngredientRepository;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;

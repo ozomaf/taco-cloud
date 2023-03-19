@@ -1,6 +1,6 @@
-package com.azatkhaliullin.tacocloud.web;
+package com.azatkhaliullin.tacocloud.controller;
 
-import com.azatkhaliullin.tacocloud.TacoOrder;
+import com.azatkhaliullin.tacocloud.dto.TacoOrder;
 import com.azatkhaliullin.tacocloud.data.OrderRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;

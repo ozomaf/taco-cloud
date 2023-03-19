@@ -1,9 +1,9 @@
-package com.azatkhaliullin.tacocloud.web;
+package com.azatkhaliullin.tacocloud.controller;
 
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import com.azatkhaliullin.tacocloud.TacoOrder;
+import com.azatkhaliullin.tacocloud.dto.TacoOrder;
 import com.azatkhaliullin.tacocloud.data.IngredientRepository;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import lombok.extern.slf4j.Slf4j;
-import com.azatkhaliullin.tacocloud.Ingredient;
-import com.azatkhaliullin.tacocloud.Ingredient.Type;
-import com.azatkhaliullin.tacocloud.Taco;
+import com.azatkhaliullin.tacocloud.dto.Ingredient;
+import com.azatkhaliullin.tacocloud.dto.Ingredient.Type;
+import com.azatkhaliullin.tacocloud.dto.Taco;
 
 @Slf4j
 @Controller

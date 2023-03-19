@@ -1,4 +1,4 @@
-package com.azatkhaliullin.tacocloud;
+package com.azatkhaliullin.tacocloud.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

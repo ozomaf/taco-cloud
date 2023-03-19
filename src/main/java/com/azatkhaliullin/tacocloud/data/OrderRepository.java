@@ -1,6 +1,6 @@
 package com.azatkhaliullin.tacocloud.data;
 
-import com.azatkhaliullin.tacocloud.TacoOrder;
+import com.azatkhaliullin.tacocloud.dto.TacoOrder;
 import org.springframework.data.repository.CrudRepository;
 
 

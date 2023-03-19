@@ -1,6 +1,6 @@
 package com.azatkhaliullin.tacocloud.data;
 
-import com.azatkhaliullin.tacocloud.Ingredient;
+import com.azatkhaliullin.tacocloud.dto.Ingredient;
 import org.springframework.data.repository.CrudRepository;
 
 
