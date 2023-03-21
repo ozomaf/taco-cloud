@@ -38,7 +38,7 @@ public class SecurityConfig {
 
                 .and()
                 .logout()
-                .logoutSuccessUrl("/")
+                .logoutSuccessUrl("/login")
 
                 .and()
                 .csrf()
@@ -50,6 +50,8 @@ public class SecurityConfig {
                 .sameOrigin()
 
                 .and()
+                .csrf()
+                .disable()
                 .build();
     }
 
