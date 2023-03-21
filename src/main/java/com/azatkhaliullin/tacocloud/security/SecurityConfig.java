@@ -30,13 +30,27 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
-        return httpSecurity
-                .authorizeHttpRequests()
+        return httpSecurity.authorizeHttpRequests()
                 .requestMatchers("/design", "/orders").hasRole("USER")
                 .requestMatchers("/", "/**").permitAll()
                 .and()
                 .formLogin().loginPage("/login")
-                .and().build();
+
+                .and()
+                .logout()
+                .logoutSuccessUrl("/")
+
+                .and()
+                .csrf()
+                .ignoringRequestMatchers("/h2-console/**")
+
+                .and()
+                .headers()
+                .frameOptions()
+                .sameOrigin()
+
+                .and()
+                .build();
     }
 
 }
