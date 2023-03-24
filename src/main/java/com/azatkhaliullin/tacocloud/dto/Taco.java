@@ -19,12 +19,9 @@ public class Taco {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Date createdAt = new Date();
-
     @NotNull(message = "")
     @Size(min = 3, message = "Name must be at least 3 characters long")
     private String name;
-
-    @NotNull
     @Size(min = 1, message = "You must choose at least 1 ingredient")
     @ManyToMany
     private List<Ingredient> ingredients;
